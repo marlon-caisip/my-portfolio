@@ -1,0 +1,901 @@
+/* css to override the bootstrap */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;500;600&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #f3f3f3;
+}
+
+/* This is a fallback font that will be used while Poppins is loading */
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-display: swap;
+  src: local("Roboto"),
+    url("https://fonts.gstatic.com/l/font?kit=KFOmCnqEu92Fr1Me4GZNCzcPbOHTt6tqXl2TMWgtUADtbNE0FwjR60ub0BtuliV9nzY5opeRF6O-FnZsaJLetvV-9mXgaxv7xBV8jmt2chWZ7OuZw6siU4A&skey=a0a0114a1dcab3ac&v=v30")
+      format("woff2");
+}
+
+a#home {
+  font-family: Poppins, "Century Gothic", Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  color: #2e363c;
+  -webkit-user-select: none;
+  user-select: none;
+  pointer-events: none;
+}
+
+#navBar {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem;
+}
+
+.navRight {
+  display: flex;
+  gap: 1rem;
+  align-items: baseline;
+}
+
+.navItem {
+  text-align: center;
+  text-decoration: none;
+  color: #2e363c;
+  font-family: Lato, "Century Gothic", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+}
+
+/* properties to enable the brandname to be selected  */
+a#home {
+  -webkit-user-select: auto;
+  user-select: auto;
+  pointer-events: visible;
+}
+
+a#home:hover {
+  text-decoration: none;
+}
+
+#getInTouch {
+  background-color: #2e363c;
+  color: #f3f3f3;
+  border-color: transparent;
+  font-size: 16px;
+  padding: 5px 10px 5px 10px;
+  margin-top: 4px;
+  border-radius: 5px;
+  font-weight: 350;
+}
+
+.navItem:hover {
+  text-decoration: none;
+}
+
+#getInTouch {
+  color: #ced4da !important;
+  font-weight: 500;
+}
+
+a.navItem:hover {
+  color: #232222 !important;
+}
+
+/* diff screen */
+@media only screen and (min-width: 600px) {
+  .slogan {
+    color: #2e363c;
+    font-family: Lato, Arial, Helvetica, sans-serif;
+    font-size: 120px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    width: 920px;
+    margin-top: 15px;
+    margin-left: 50px;
+    margin-right: 100px;
+    -webkit-user-select: none;
+    user-select: none;
+    pointer-events: none;
+  }
+
+  a#home {
+    font-size: 25px;
+  }
+
+  #getInTouch.navItem,
+  .navItem {
+    font-size: 22px;
+  }
+
+  #card-body {
+    display: flex;
+    overflow-x: auto;
+    min-height: 35rem;
+  }
+
+  #card-body,
+  .card {
+    min-width: 25rem;
+    min-height: 35rem;
+    overflow-y: hidden;
+    margin: 1rem;
+  }
+
+  /* below are properties for the cards for project */
+
+  .tag {
+    display: flex;
+    flex-direction: row;
+    margin: 0 0rem 0px 2rem;
+  }
+
+  .outline-text {
+    display: inline;
+    margin-right: 0.4rem;
+    padding: 1px 10px;
+    border: 1px solid #768088;
+    border-radius: 5px;
+    background: transparent; /* Make the background transparent */
+    color: #768088;
+    font-size: 10.5px;
+    text-align: center;
+    font-family: "Lato";
+  }
+
+  .upperPart {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    font-family: "Lato";
+    margin: 0 15rem;
+    gap: 5rem;
+    align-content: center;
+  }
+
+  .column {
+    margin: 8px;
+    width: 40.5rem;
+  }
+
+  .contacts {
+    margin-left: 10rem;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .input-form {
+    display: flex;
+    color: #4a535b;
+    font-family: inherit;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    position: relative;
+    width: 30.2rem;
+    flex-direction: column;
+  }
+
+  .column {
+    margin: 8px;
+  }
+
+  .gIt {
+    color: #2e363c;
+    font-family: inherit;
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    width: 920px;
+    margin-top: 50px;
+    margin-left: 85px;
+    -webkit-user-select: none;
+    user-select: none;
+    pointer-events: none;
+    margin-left: 9rem;
+    margin-bottom: 1rem;
+  }
+
+  .select-menu {
+    width: 29.76rem;
+    /* margin: 0 7px 0 209px; */
+    display: flex;
+    border: 0.5px solid #ced4da !important;
+    border-radius: 5px;
+    background: #fff;
+  }
+
+  .select-menu.active {
+    border: 1px solid rgb(139, 139, 154) !important;
+  }
+
+  .select-menu .select-btn {
+    width: 29.76rem;
+    display: flex;
+    height: 44.145px;
+    background: #fff;
+    padding: 12px;
+    border-radius: 5px;
+    align-items: center;
+    cursor: pointer;
+    justify-content: space-between;
+  }
+
+  .select-btn svg {
+    font-size: 25px;
+    transition: 0.3s;
+    color: #495056;
+  }
+
+  .select-menu.active .select-btn svg {
+    transform: rotate(-180deg);
+  }
+
+  .select-menu .options {
+    width: 29.76rem;
+    position: fixed;
+    z-index: 999; /* position the menu in the top */
+    padding: 0px;
+    margin-top: 2.97rem;
+    margin-left: 3px;
+    border-radius: 5px;
+    background: #fff;
+    box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.1);
+    display: none;
+  }
+
+  .select-menu.active .options {
+    display: block;
+    width: 467px;
+  }
+
+  .select-menu.active .option.selected {
+    background-color: #4a535b !important;
+  }
+
+  .options .option {
+    width: 467px;
+    display: flex;
+    height: 55px;
+    cursor: pointer;
+    padding: 0 16px;
+    border-radius: 5px;
+    align-items: center;
+    background: #fffffff2;
+  }
+
+  .options .option:hover {
+    background-color: #e1e1e8a6;
+  }
+
+  .option svg {
+    font-size: 25px;
+    margin-right: 12px;
+  }
+
+  .option .option-text {
+    color: #6c757d;
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+  }
+
+  #submitPart {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+    padding-left: 2rem;
+  }
+
+  .sBtn-text {
+    color: #6c757d;
+    font-family: inherit;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+  }
+
+  .submitBtn {
+    width: 111px;
+    height: 44.145px;
+    margin-left: 36.3rem;
+    border: transparent;
+    background-color: rgb(46 54 60);
+    border-radius: 5px;
+    color: white;
+    font-family: inherit;
+    font-size: 16px;
+    margin: 0;
+  }
+
+  .submitBtn:hover {
+    background-color: rgb(62, 70, 76);
+  }
+
+  .submitBtn:active {
+    background-color: rgb(38, 41, 43);
+  }
+
+  .form-control {
+    font-family: inherit;
+    width: 40rem;
+    height: 70px;
+    flex-shrink: 0;
+    /* border: 0.2px solid #d0d6db !important; */
+    border-radius: 5px;
+    background: #fff;
+    /* box-shadow: 0px 0px 1px 1px rgb(0 0 0 / 39%); */
+    /* margin-left: 209px; */
+  }
+
+  .form-control.valid:focus {
+    border: 1px solid green; /* Green border color when focused and valid */
+  }
+
+  .form-control.invalid:focus {
+    border: 1px solid red; /* Red border color when focused and invalid */
+  }
+
+  /* Apply the gray border to the input with id="nameInput" when it's focused */
+  #nameInput:focus,
+  #emailInput:focus,
+  #message:focus {
+    border: 1px solid rgb(139, 139, 154);
+    box-shadow: none;
+  }
+
+  #message {
+    height: 300px;
+    width: 40rem;
+    position: relative;
+    text-align: left;
+    resize: none;
+  }
+
+  /* Style for the hidden class */
+  .hidden {
+    visibility: hidden;
+  }
+
+  /* Container for the textarea and character count */
+  .textarea-container {
+    position: relative;
+  }
+
+  /* Container for the message and character count */
+  .message-wrapper {
+    position: relative;
+  }
+
+  /* Position the character count inside the message box */
+  #charCount {
+    position: absolute;
+    left: 90%;
+    top: 89%;
+    transform: translate(-50%, -50%);
+    font-size: 13px;
+    font-family: inherit;
+    color: rgb(174 174 174);
+  }
+
+  .select-menu {
+    width: 40rem;
+    /* margin: 0 7px 0 209px; */
+    display: flex;
+    border: 0.5px solid #ced4da !important;
+    border-radius: 5px;
+    background: #fff;
+  }
+
+  .select-menu.active {
+    border: 1px solid rgb(139, 139, 154) !important;
+  }
+
+  .select-menu .select-btn {
+    width: 40rem;
+    height: 70px;
+    display: flex;
+    background: #fff;
+    padding: 12px;
+    border-radius: 5px;
+    align-items: center;
+    cursor: pointer;
+    justify-content: space-between;
+  }
+
+  .select-btn svg {
+    font-size: 25px;
+    transition: 0.3s;
+    color: #495056;
+  }
+
+  .select-menu.active .select-btn svg {
+    transform: rotate(-180deg);
+  }
+
+  .select-menu .options {
+    width: 39.5rem;
+    height: 70px;
+    position: fixed;
+    z-index: 999; /* position the menu in the top */
+    padding: 0px;
+    margin-top: 4.5rem;
+    margin-left: 3px;
+    border-radius: 5px;
+    background: #fff;
+    box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.1);
+    display: none;
+  }
+
+  .select-menu.active .options {
+    display: block;
+    width: 39.5rem;
+    height: 70px;
+  }
+
+  .select-menu.active .option.selected {
+    background-color: #4a535b !important;
+  }
+
+  .options .option {
+    width: 39.5rem;
+    height: 70px;
+    display: flex;
+    cursor: pointer;
+    padding: 2px 16px;
+    border-radius: 5px;
+    align-items: center;
+    background: #fffffff2;
+  }
+
+  .options .option:hover {
+    background-color: #e1e1e8a6;
+  }
+
+  .option svg {
+    font-size: 25px;
+    margin-right: 12px;
+  }
+
+  .option .option-text {
+    color: #6c757d;
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+  }
+
+  #submitPart {
+    display: flex;
+    margin: 1px;
+    padding-left: 2rem;
+  }
+
+  .sBtn-text {
+    color: #6c757d;
+    font-family: inherit;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+  }
+
+  .submitBtn {
+    width: 111px;
+    height: 44.145px;
+    margin-left: 36.3rem;
+    border: transparent;
+    background-color: rgb(46 54 60);
+    border-radius: 5px;
+    color: white;
+    font-family: inherit;
+    font-size: 16px;
+    margin: 0;
+  }
+}
+
+@media only screen and (min-width: 1270px) {
+  .slogan {
+    color: #2e363c;
+    font-family: Lato, Arial, Helvetica, sans-serif;
+    font-size: 150px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    width: 920px;
+    margin-top: 65px;
+    margin-left: 85px;
+    -webkit-user-select: none;
+    user-select: none;
+    pointer-events: none;
+  }
+
+  #card-body {
+    justify-content: center; /* center the card for big screen, while in small screen they will remain in the most left part */
+  }
+
+  /* INPUT FORM */
+
+  .contacts {
+    display: block !important;
+    text-align: left !important;
+    margin-left: 1rem !important;
+  }
+
+  .upperPart {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    align-items: baseline;
+    font-family: "Lato";
+    margin: 0 11rem;
+    align-content: space-around;
+    flex-wrap: nowrap;
+    gap: 5rem;
+    margin-bottom: 2;
+  }
+
+  .gIt {
+    color: rgb(46, 54, 60);
+    font-family: inherit;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    width: 920px;
+    margin-top: 50px;
+    -webkit-user-select: none;
+    user-select: none;
+    pointer-events: none;
+    margin-left: 9rem;
+    margin-bottom: 1rem;
+  }
+
+  .input-form {
+    display: flex;
+    flex-direction: column;
+    color: #4a535b;
+    font-family: inherit;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    position: relative;
+    width: 30.2rem;
+  }
+
+  .column {
+    margin: 7px;
+    width: auto;
+  }
+
+  .form-control {
+    font-family: inherit;
+    width: 29.76rem;
+    height: 44.145px;
+    flex-shrink: 0;
+    /* border: 0.2px solid #d0d6db !important; */
+    border-radius: 5px;
+    background: #fff;
+    /* box-shadow: 0px 0px 1px 1px rgb(0 0 0 / 39%); */
+    /* margin-left: 209px; */
+  }
+
+  .form-control.valid:focus {
+    border: 1px solid green; /* Green border color when focused and valid */
+  }
+
+  .form-control.invalid:focus {
+    border: 1px solid red; /* Red border color when focused and invalid */
+  }
+
+  /* Apply the gray border to the input with id="nameInput" when it's focused */
+  #nameInput:focus,
+  #emailInput:focus,
+  #message:focus {
+    border: 1px solid rgb(139, 139, 154);
+    box-shadow: none;
+  }
+
+  #message {
+    height: 200px;
+    width: 29.76rem;
+    position: relative;
+    text-align: left;
+    resize: none;
+  }
+
+  /* Style for the hidden class */
+  .hidden {
+    visibility: hidden;
+  }
+
+  /* Container for the textarea and character count */
+  .textarea-container {
+    position: relative;
+  }
+
+  /* Container for the message and character count */
+  .message-wrapper {
+    position: relative;
+  }
+
+  /* Position the character count inside the message box */
+  #charCount {
+    position: absolute;
+    left: 95%;
+    top: 89%;
+    transform: translate(-50%, -50%);
+    font-size: 13px;
+    font-family: inherit;
+    color: rgb(174 174 174);
+  }
+
+  .select-menu {
+    width: 29.76rem;
+    /* margin: 0 7px 0 209px; */
+    display: flex;
+    border: 0.5px solid #ced4da !important;
+    border-radius: 5px;
+    background: #fff;
+  }
+
+  .select-menu.active {
+    border: 1px solid rgb(139, 139, 154) !important;
+  }
+
+  .select-menu .select-btn {
+    width: 29.76rem;
+
+    height: 44.145px;
+    display: flex;
+    background: #fff;
+    padding: 12px;
+    border-radius: 5px;
+    align-items: center;
+    cursor: pointer;
+    justify-content: space-between;
+  }
+
+  .select-btn svg {
+    font-size: 25px;
+    transition: 0.3s;
+    color: #495056;
+  }
+
+  .select-menu.active .select-btn svg {
+    transform: rotate(-180deg);
+  }
+
+  .select-menu .options {
+    width: 28.9rem;
+    position: fixed;
+    z-index: 999; /* position the menu in the top */
+    padding: 0px;
+    margin-top: 3rem;
+    margin-left: 3px;
+    border-radius: 5px;
+    background: #fff;
+    box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.1);
+    display: none;
+  }
+
+  .select-menu.active .options {
+    display: block;
+    width: 28.75rem;
+    height: 6.8rem;
+  }
+
+  .select-menu.active .option.selected {
+    background-color: #4a535b !important;
+  }
+
+  .options .option {
+    width: 28.75rem;
+    height: 55px;
+    display: flex;
+    cursor: pointer;
+    padding: 2px 16px;
+    border-radius: 5px;
+    align-items: center;
+    background: #fffffff2;
+  }
+
+  .options .option:hover {
+    background-color: #e1e1e8a6;
+  }
+
+  .option svg {
+    font-size: 25px;
+    margin-right: 12px;
+  }
+
+  .option .option-text {
+    color: #6c757d;
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+  }
+}
+
+.box {
+  padding: 0 110px 110px;
+  flex-shrink: 0;
+  display: inline-block;
+  margin-bottom: -6rem;
+}
+
+.sectionTitle {
+  color: #363c42;
+  font-size: 28px;
+  font-weight: 500;
+  font-family: "POPPINS";
+  -webkit-user-select: none;
+  user-select: none;
+  pointer-events: none;
+  margin-top: 4rem;
+}
+
+.infoContent {
+  color: #363c42e3;
+  font-weight: normal;
+  font-style: normal;
+  /* font-weight: 400; */
+  text-align: justify;
+  font-size: 20px;
+  margin-left: 9.5rem;
+  -webkit-user-select: none;
+  user-select: none;
+  pointer-events: none;
+  font-family: "Poppins";
+}
+
+#trackRecord {
+  text-decoration: line-through;
+  font-weight: 200;
+}
+
+.horizontal-line {
+  border-top: 1.3px solid #656e76;
+  margin: 25px 0 25px 0;
+}
+
+.slogan {
+  margin-top: 1rem;
+  margin-bottom: 4rem;
+}
+
+#card-body {
+  display: flex;
+  overflow-x: auto;
+
+  min-width: 25rem;
+  min-height: 35rem;
+
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+#card-body,
+.card {
+  overflow-y: hidden;
+  margin: 1rem;
+}
+
+#card-body::-webkit-scrollbar {
+  display: none;
+}
+
+/* below are properties for the cards for project */
+
+.card {
+  background-color: #ffffff;
+  border-color: transparent;
+  border-radius: 2vw;
+  box-shadow: -4px -4px 40px 0 #f2f2f2, 0px 0px 6px 0 #9494a7;
+  display: inline-block;
+  max-width: 25.5rem;
+
+  /* margin: 18px; */
+}
+
+img.img-content {
+  width: 53%;
+  height: 61%;
+  display: block;
+  margin-top: 55px;
+  margin-bottom: 25px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card-title {
+  text-align: left; /* Align the card title to the left */
+  padding: 1rem 2rem 0rem;
+  font-size: 19px;
+  font-family: "Lato";
+  color: #4b5257;
+}
+
+.tag {
+  display: flex;
+  flex-direction: row;
+  margin: 0 0rem 0px 2rem;
+}
+
+.outline-text {
+  display: inline;
+  margin-right: 0.4rem;
+  padding: 1px 10px;
+  border: 1px solid #768088;
+  border-radius: 5px;
+  background: transparent; /* Make the background transparent */
+  color: #768088;
+  font-size: 10.5px;
+  text-align: center;
+  font-family: "Lato";
+}
+
+.card {
+  transition: transform 0.5s; /* Add a smooth transition for the transform property */
+
+  &:hover {
+    transform: translateY(-15px); /* Move the card up by 10 pixels */
+  }
+}
+
+/* properties of input box/text box */
+
+.headerText {
+  color: #4a535b;
+  font-family: Poppins, "Century Gothic", Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 0;
+}
+
+a#myLocation,
+.footerText {
+  color: #4a535b !important;
+  font-family: Poppins, "Century Gothic", Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.socMedIcon {
+  color: #4a535b;
+}
+
+a.socMedIcon:hover,
+a#myLocation:hover,
+a#myLocation:focus {
+  text-decoration: none;
+  color: #232222 !important;
+}
+
+#socMedIcon {
+  color: #4a535b;
+  margin-left: 0px;
+}
+
+.headBlock {
+  margin: 0 0 23px 0;
+}
+
+#getInTouch.navItem,
+.navItem {
+  font-size: 17px;
+}

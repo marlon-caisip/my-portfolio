@@ -1,0 +1,251 @@
+<!-- 1. I used Prettier, a VS Code extension for formatting HTML, CSS, & JS codes, that's why it consumes multiple lines. -->
+<!-- 2. This website is dependent on the local file and online source of bootstrap that's why both of them are linked. -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Personal Blog</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- CSS to override the bootstrap -->
+    <link rel="stylesheet" href="css/custom.css" />
+
+    <!-- link the local font for Lato & Poppins for efficiency -->
+    <link rel="stylesheet" href="fonts/Lato/Lato-Light.ttf" />
+    <link rel="stylesheet" href="fonts/Lato/Lato-Thin.ttf" />
+    <link rel="stylesheet" href="fonts/Lato/Lato-Regular.ttf" />
+    <link rel="stylesheet" href="fonts/Lato/Lato-Bold.ttf" />
+    <link rel="stylesheet" href="fonts/Lato/Lato-Black.ttf" />
+
+    <link rel="stylesheet" href="fonts/Poppins/Poppins-ExtraLight.ttf" />
+    <link rel="stylesheet" href="fonts/Poppins/Poppins-Light.ttf" />
+    <link rel="stylesheet" href="fonts/Poppins/Poppins-Thin.ttf" />
+    <link rel="stylesheet" href="fonts/Poppins/Poppins-Regular.ttf" />
+    <link rel="stylesheet" href="fonts/Poppins/Poppins-Medium.ttf" />
+    <link rel="stylesheet" href="fonts/Poppins/Poppins-Bold.ttf" />
+    <link rel="stylesheet" href="fonts/Poppins/Poppins-SemiBold.ttf" />
+    <link rel="stylesheet" href="fonts/Poppins/Poppins-ExtraBold.ttf" />
+    <link rel="stylesheet" href="fonts/Poppins/Poppins-Black.ttf" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav>
+      <div id="navBar">
+        <a id="home">msc</a>
+        <div class="navRight">
+          <a href="index.html#about" aria-current="page" class="navItem"
+            >About</a
+          >
+          <a
+            href="contact me.html"
+            id="getInTouch"
+            class="navItem"
+            aria-disabled="true"
+            >Get in Touch</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <div class="slogan">The creative mind behind Marlon Caisip</div>
+
+    <!-- CARDS -->
+    <!-- the card are inside the card body div as well as outline-text to tag to modify them in display to be displayed as row -->
+    <div id="card-body">
+      <div class="card">
+        <img class="img-content" src="img/vlp.png" alt="vlp" />
+        <div class="card-title">MOOC App Design</div>
+        <div class="tag">
+          <span class="outline-text">University</span>
+          <span class="outline-text">Learning</span>
+          <span class="outline-text">VLP</span>
+        </div>
+      </div>
+      <div class="card">
+        <img class="img-content" src="img/tindeo.png" alt="vlp" />
+        <div class="card-title">Ecommerce</div>
+        <div class="tag">
+          <span class="outline-text">Shop</span>
+        </div>
+      </div>
+      <div class="card">
+        <img class="img-content" src="img/personal blog.png" alt="vlp" />
+        <div class="card-title">Personal Blog</div>
+        <div class="tag">
+          <span class="outline-text">Portfolio</span>
+          <span class="outline-text">Autobiography</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- BIOGRAPHY -->
+    <!-- box sections -->
+    <div class="box" id="about">
+      <div class="sectionTitle">Who am I</div>
+      <div class="horizontal-line"></div>
+      <p class="infoContent">
+        I'm Marlon Caisip, I've designed applications, and websites that are
+        more simpler and easy to use, lessening the friction to the users. I
+        have spent time learning about design principles and practicing my
+        skills to design.
+      </p>
+    </div>
+
+    <div class="box">
+      <div class="sectionTitle">
+        My <span id="trackRecord">Entire Life Story</span> Track Record
+      </div>
+      <div class="horizontal-line"></div>
+      <p class="infoContent">
+        I started learning HTML, CSS, and JavaScript a few years ago. However,
+        designing for user experience has always been a passion of mine. I
+        graduated from Soledad R. Villafuerte Elementary School, finished my
+        Junior High School at CBSUA - Sipocot, and Senior High School at King
+        Thomas Learning Academy Inc. I am currently taking a bachelor's degree
+        in Information Technology at CBSUA Sipocot.
+
+        <br />
+        <br />
+
+        My interest in programming and designing started when website
+        development was introduced to us by our instructor, Tito Tabs. At that
+        time, AI wasn't yet available, so going to the library, reading books,
+        watching YouTube tutorials, reading guides, and docs were the key to
+        developing my skills.
+
+        <br />
+        <br />
+
+        After my pursuit of basic website development, I stumbled upon powerful
+        programming languages like C#, C++, Java, and so on. However, Python was
+        the one that caught my attention. The majority of the community agrees
+        that it is the most efficient and friendly programming language to
+        learn. So, I studied this language in pursuit of machine learning, to be
+        specific, creating my own Jarvis as I was interested in Iron Man's AI
+        assistant.
+
+        <br />
+        <br />
+
+        Things turned out my way, I was having a hard time learning Python for a
+        few reasons. I stopped for a while and then shifted to VFX effects,
+        where Adobe products were first introduced to me.
+
+        <br />
+        <br />
+
+        Not so long after, I had to take a break and focus on refining my skills
+        as a musician. I studied the art of music, beginner to intermediate
+        piano lessons, and music theory.
+
+        <br />
+        <br />
+
+        After a long while, I got interested in operating systems. So, I went
+        back and forth to using Windows and Linux. Personally, I have fun using
+        Linux, in fact, using Linux made me considered Windows a trash OS. But
+        the majority of my time, I use Windows, and it's great.
+
+        <br />
+        <br />
+
+        It was a long journey for me but I learned so many skills through that,
+        and right now, I'm learning Java, SQL, & Angular. I might study Python
+        soon, and name my project JARVIS. The innovation are massive, so I'm
+        trying to keep up, and this website is the proof of that.
+      </p>
+    </div>
+
+    <div class="box">
+      <div class="sectionTitle">What I do</div>
+      <div class="horizontal-line"></div>
+      <p class="infoContent">
+        I make simple yet functional designs that make people's lives easier
+        such as application, website, and product design. Too much visual
+        clutter can be distracting, so I make it direct and honest through
+        user-first design principles that is both visually appealing and easy to
+        understand. Designing is an endless process of trying new approach that
+        is beneficial to users experience, as well as finding out what's
+        pleasing to eyes yet meaningful and useful, and solving problems that
+        matters. User Experience Design will evolve far greater than it is now,
+        and in the latter future the Interface Design, Product Design, and
+        Service Design will change, and its important for developers to be able
+        to catch up with these developments.
+
+        <br />
+        <br />
+
+        I have some knowledge of Java and Python, and I am proficient in HTML,
+        CSS, JavaScript, user experience design, user journey mapping, and UI/UX
+        design.
+      </p>
+    </div>
+
+    <div class="box">
+      <div class="sectionTitle">What keeps me up at night?</div>
+      <div class="horizontal-line"></div>
+      <p class="infoContent">
+        I'm watching Anime, and I'm in Season 5 Episode 28 of Naruto. Weekly
+        updates for Zom 100: Bucket List of the Dead, The Eminence in Shadow,
+        Jujutsu Kaisen, Frieren: Beyond Journey's End, The Rising of the Shield
+        Hero, Goblin Slayer, Shangri-La Frontier, Ragna Crimson, and etc. are
+        taking long so I spent some time on reading Dr. Stone, That Time I Got
+        Reincarnated as a Slime, Tales of de**ns and go*s, and Magic Emperor.
+        You might wonder, where do I get all the time for these? Well, I have my
+        ways.
+
+        <br />
+        <br />
+
+        But seriously, I'm thinking about how can user-first design principles
+        can be beneficial for the masses of people. How can these principles
+        bring social change? Is glassmorphism the best UI? Or is it Neumorphism?
+        Or maybe Minimalism? Or maybe the best approach is to use all of them in
+        one design?
+
+        <br />
+        <br />
+
+        What's more to design than design itself?
+      </p>
+    </div>
+  </body>
+</html>
